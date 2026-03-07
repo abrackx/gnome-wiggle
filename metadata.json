@@ -1,0 +1,9 @@
+{
+  "extension-id": "mouse-wiggle",
+  "uuid": "mouse-wiggle@gnome-wiggle",
+  "name": "Mouse Wiggle",
+  "description": "Temporarily enlarges the cursor when you wiggle the mouse, like macOS.",
+  "shell-version": ["48", "49"],
+  "version": 1,
+  "url": ""
+}
