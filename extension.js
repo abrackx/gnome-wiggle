@@ -11,6 +11,7 @@ export default class MouseWiggleExtension extends Extension {
 
         this._originalSize = this._desktopSettings.get_int('cursor-size');
         this._history = [];
+        this._lastX = null;
         this._enlarged = false;
         this._restoreTimer = null;
 
@@ -68,6 +69,10 @@ export default class MouseWiggleExtension extends Extension {
     }
 
     _onMotion(x) {
+        if (x === this._lastX)
+            return;
+        this._lastX = x;
+
         const now = Date.now();
         this._history.push({ x, t: now });
 

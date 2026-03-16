@@ -1,4 +1,4 @@
-UUID = mouse-wiggle@gnome-wiggle
+UUID = mouse-wiggle@abrackx.github.io
 INSTALL_DIR = $(HOME)/.local/share/gnome-shell/extensions/$(UUID)
 
 install:
