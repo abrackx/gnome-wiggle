@@ -5,5 +5,6 @@
   "description": "Temporarily enlarges the cursor when you wiggle the mouse, like macOS.",
   "shell-version": ["48", "49"],
   "version": 1,
-  "url": ""
+  "url": "",
+  "settings-schema": "org.gnome.shell.extensions.mouse-wiggle"
 }

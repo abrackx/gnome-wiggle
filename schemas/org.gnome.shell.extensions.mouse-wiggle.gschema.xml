@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.mouse-wiggle"
+          path="/org/gnome/shell/extensions/mouse-wiggle/">
+
+    <key name="poll-interval-ms" type="i">
+      <default>50</default>
+      <summary>Polling interval (ms)</summary>
+      <description>How often to sample the cursor position, in milliseconds.</description>
+    </key>
+
+    <key name="history-window-ms" type="i">
+      <default>800</default>
+      <summary>Detection window (ms)</summary>
+      <description>Sliding time window used to detect wiggle gestures, in milliseconds.</description>
+    </key>
+
+    <key name="min-reversals" type="i">
+      <default>4</default>
+      <summary>Minimum direction reversals</summary>
+      <description>Number of direction changes required to trigger cursor enlargement.</description>
+    </key>
+
+    <key name="min-move-px" type="i">
+      <default>8</default>
+      <summary>Minimum movement (px)</summary>
+      <description>Minimum pixels per sample to count as intentional movement (jitter filter).</description>
+    </key>
+
+    <key name="cursor-scale" type="i">
+      <default>3</default>
+      <summary>Cursor scale multiplier</summary>
+      <description>Factor by which the cursor is enlarged when a wiggle is detected.</description>
+    </key>
+
+    <key name="restore-delay-ms" type="i">
+      <default>200</default>
+      <summary>Restore delay (ms)</summary>
+      <description>How long the enlarged cursor is held before the shrink animation begins, in milliseconds.</description>
+    </key>
+
+    <key name="restore-anim-steps" type="i">
+      <default>12</default>
+      <summary>Restore animation steps</summary>
+      <description>Number of steps in the cursor shrink animation.</description>
+    </key>
+
+    <key name="restore-anim-step-ms" type="i">
+      <default>16</default>
+      <summary>Restore animation step duration (ms)</summary>
+      <description>Duration of each step in the cursor shrink animation, in milliseconds.</description>
+    </key>
+
+  </schema>
+</schemalist>
